@@ -1,0 +1,25 @@
+spring:
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: "jdbc:mysql://localhost:3306/liveScoresAppChat?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC"
+        username: root
+        password: Rt_7811207542
+    servlet:
+        multipart:
+            max-file-size: 1MB
+            max-request-size: 5MB
+    mvc:
+        hiddenmethod:
+            filter:
+                enabled: true
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
+        hibernate:
+            ddl-auto: update
+        open-in-view: false
+        properties:
+            hibernate:
+                format_sql: true
+        defer-datasource-initialization: true
+server:
+    port: 8081
