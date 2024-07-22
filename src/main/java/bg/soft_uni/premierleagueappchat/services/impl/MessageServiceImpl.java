@@ -26,14 +26,13 @@ public class MessageServiceImpl implements MessageService {
     @Override
     public void addMessage(AddMessageDto addMessageDto) {
         Message messages = new Message(addMessageDto.getUserMessage(), LocalDateTime.now(), addMessageDto.getUserId());
-                                                                                                                                                                                                                                                 this.messageRepository.save(messages);
+        this.messageRepository.save(messages);                                                                                                                                                                                                                                         this.messageRepository.save(messages);
     }
 
     @Override
     public List<ExportMessageDto> getAllMessagesSortedByCreated() {
         return this.messageRepository.findAll().stream().map(message -> {
-            ExportMessageDto map = this.modelMapper.map(message, ExportMessageDto.class);
-            return map;
+            return this.modelMapper.map(message, ExportMessageDto.class);
         }).sorted(Comparator.comparing(ExportMessageDto::getCreated)).collect(Collectors.toList());
     }
 
