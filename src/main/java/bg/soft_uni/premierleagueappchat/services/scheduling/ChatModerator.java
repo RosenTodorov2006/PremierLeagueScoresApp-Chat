@@ -22,7 +22,7 @@ public class ChatModerator {
 
     @Scheduled(cron = "0 0/15 * * * ?")
     public void checkForForbiddenWords() {
-        this.messageRepository.findAll().stream().forEach(message -> {
+        this.messageRepository.findAll().forEach(message -> {
             List<String> forbiddenWords = Arrays.stream(ForbiddenWords.values()).map(Enum::name).toList();
             if(forbiddenWords.contains(message.getMessage().toUpperCase())){
                 this.messageRepository.deleteById(message.getId());

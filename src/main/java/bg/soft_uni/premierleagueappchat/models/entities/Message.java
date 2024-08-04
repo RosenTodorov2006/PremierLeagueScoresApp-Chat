@@ -12,7 +12,7 @@ public class Message{
     private long id;
     @Column(nullable = false)
     private String message;
-    @Column
+    @Column(name = "user_id")
     private long userId;
     @Column(nullable = false)
     private LocalDateTime created;
