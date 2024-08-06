@@ -17,7 +17,7 @@ public class ChatModerator {
     }
     @Scheduled(cron = "0 0 0/12 * * ?")
     public void cleanChat() {
-        messageRepository.deleteAll();
+        this.messageRepository.deleteAll();
     }
 
     @Scheduled(cron = "0 0/15 * * * ?")
