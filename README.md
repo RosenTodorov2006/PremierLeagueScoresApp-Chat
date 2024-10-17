@@ -1,7 +1,7 @@
 PremierLeagueScoresApp-Chat
 
 Description: 
-PremierLeagueScoresApp-Chat is the chat service designed specifically for the main application PremierLeagueScoresApp. It allows fans of the English Premier League to communicate with each other in real time. The chat service communicates with the main application via REST API requests, enabling seamless integration between the two projects.
+PremierLeagueScoresApp-Chat is the chat service designed specifically for the main application PremierLeagueScoresApp: https://github.com/RosenTodorov2006/PremierLeagueScoresApp. It allows fans of the English Premier League to communicate with each other in real time. The chat service communicates with the main application via REST API requests, enabling seamless integration between the two projects.
 
 Key features include:
 Real-time communication for users of the PremierLeagueScoresApp.
