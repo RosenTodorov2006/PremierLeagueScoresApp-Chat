@@ -25,5 +25,27 @@ public enum ForbiddenWords {
     INTIMIDATE,
     SLANDER,
     LIBEL,
-    DEFAMATION
+    DEFAMATION,
+    VIOLENCE,
+    ABUSE,
+    HARASS,
+    MOLEST,
+    ASSAULT,
+    MURDER,
+    RAPE,
+    SUICIDE,
+    TRAFFICK,
+    DRUGS,
+    WEAPON,
+    PORNOGRAPHY,
+    EXPLOIT,
+
+    PREDATOR,
+    CULT,
+    VIOLATE,
+    PERVERT,
+    VANDALIZE,
+    ANARCHY,
+    CORRUPTION,
+    ULTRAS
 }
