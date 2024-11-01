@@ -20,7 +20,7 @@ public class ChatModerator {
         this.messageRepository.deleteAll();
     }
 
-    @Scheduled(cron = "0 0/15 * * * ?")
+    @Scheduled(fixedRate = 78000)
     public void checkForForbiddenWords() {
         this.messageRepository.findAll().forEach(message -> {
             List<String> forbiddenWords = Arrays.stream(ForbiddenWords.values()).map(Enum::name).toList();
